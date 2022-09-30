@@ -40,7 +40,8 @@ Follow the list below before starting the GDAP Wizard. You must execute each of 
 - Click on Add and choose "APIs My organization uses"
 - Find "Partner Customer Delegated Administration"
 - Add all permissions under "Delegated" and "Application" and click Add Permissions
-- Click on "Grant Admin Consent for {Organization}".
+- Click on "Grant Admin Consent for {Organization}". 
+- If you receive a message like Grant consent failed with error: Claim is invalid: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx does not exist on resource application 00000000-0000-0000-0000-000000000000. Look for the guids in the API list and remove them, the grant consent operation should complete succesfully now.   
 - Go back to CIPP and perform all steps in the wizard.
 
 You can view the status of the GDAP migration in the GDAP Migration Status tab. When the migration has been completed for all your tenants you can move users into the new groups to use GDAP.
